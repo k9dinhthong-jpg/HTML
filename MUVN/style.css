@@ -1,0 +1,26 @@
+h1 {
+  /* Màu chữ */
+  color: black;
+  /* Kiểu chữ */
+  font-style: italic;
+  /* Font chữ */
+  font-family: "Times New Roman", Times, serif;
+  /* Chuyển chữ hoa thường */
+  text-transform: capitalize;
+  /* Căn giữa */
+  text-align: left;
+  /* Cỡ chữ */
+  font-size: 40px;
+}
+p {
+  /* Màu chữ */
+  color: rgb(0, 0, 0);
+  /* Font chữ */
+  font-family: "Times New Roman", Times, serif;
+  /* Chuyển chữ hoa thường */
+  text-transform: capitalize;
+  /* Căn giữa */
+  text-align: left;
+  /* Cỡ chữ */
+  font-size: 20px;
+}
