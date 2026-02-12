@@ -24,3 +24,8 @@ p {
   /* Cỡ chữ */
   font-size: 20px;
 }
+body{
+background-image: url(./IMG/tin.jpeg);
+/* Độ trong suốt */
+opacity: 0.8;
+}
