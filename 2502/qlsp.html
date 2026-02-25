@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý sản phẩm</title>
+  </head>
+  <body>
+    <header>
+      <h1>Quản lý sản phẩm</h1>
+    </header>
+    <main>
+      <h3>Form thêm sản phẩm</h3>
+      <label for="ten">Tên Sản phẩm: </label>
+      <input type="text" name="ten" id="ten" /> <br />
+      <label for="gia">Giá: </label>
+      <input type="number" name="gia" id="gia" /> <br />
+      <label for="soluong">Số lượng: </label>
+      <input type="number" name="soluong" id="soluong" /> <br />
+      <label>Loại sản phẩm: </label>
+      <select name="loaisp" id="loaisp">
+        <option value="dienthoai">Điện thoại</option>
+        <option value="laptop">Laptop</option>
+        <option value="Phụ kiện">Phụ kiện</option>
+      </select>
+      <br />
+      <label>Trạng thái: </label>
+      <input type="radio" name="trangthai" id="conhang" />
+      <label for="conhang">Còn hàng</label>
+      <input type="radio" name="trangthai" id="hethang" />
+      <label for="hethang">Hết hàng</label> <br />
+      <button>Thêm sản phẩm</button>
+      <h3>Bảng hiển thị sản phẩm</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Tên</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Loại</th>
+            <th>Trạng thái</th>
+            <th>Sửa/Xóa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>S24 Ultra</td>
+            <td>20000</td>
+            <td>10</td>
+            <td>Điện thoại</td>
+            <td>Còn hàng</td>
+            <td><button>Sửa</button> <button>Xóa</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer></footer>
+  </body>
+</html>

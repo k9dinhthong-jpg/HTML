@@ -1,0 +1,57 @@
+/* Reset cơ bản*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Toàn trang */
+/* body {
+  font-family: arial, sans-serif;
+} */
+header {
+  background-color: orange;
+}
+main {
+  background-color: antiquewhite;
+}
+/* Container */
+.kichthuoc {
+  width: 1000px;
+  margin: auto;
+}
+/* Nav layout */
+.menu {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+/* Menu */
+nav a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-weight: bold;
+}
+/* Hover */
+nav a:hover {
+  text-decoration: underline;
+}
+.slogan {
+  text-align: center;
+}
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.card {
+  text-align: center;
+}
+.footer {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  width: 200px;
+}

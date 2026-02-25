@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý nhân viên</title>
+  </head>
+  <body>
+    <header>
+      <h1>Quản Lý Nhân Viên</h1>
+    </header>
+    <main>
+      <h3>Form nhập thông tin</h3>
+      <label for="ten">Họ Tên:</label>
+      <input type="text" name="ten" id="ten" /> <br />
+      <label for="namsinh">Năm sinh:</label>
+      <input type="date" name="namsinh" id="namsinh" /><br />
+      <label>Giới tính:</label>
+      <input type="radio" name="gioitinh" id="nam" />
+      <label for="nam">Nam</label>
+      <input type="radio" name="gioitinh" id="nu" />
+      <label for="nu">Nữ</label>
+      <br />
+      <label for="phongban">Phòng Ban:</label>
+      <select name="phongban" id="phongban">
+        <option value="ketoan">Kế Toán</option>
+        <option value="it">IT</option>
+        <option value="marketing">Marketing</option>
+      </select>
+      <br />
+      <label>Kĩ năng: </label>
+      <input type="checkbox" name="kinang" id="excel" />
+      <label for="excel">Excel</label>
+      <input type="checkbox" name="kinang" id="laptrinh" />
+      <label for="laptrinh">Lập trình</label>
+      <input type="checkbox" name="kinang" id="thietke" />
+      <label for="thietke">Thiết kế</label> <br />
+      <button>Thêm nhân viên</button> <br />
+      <h3>Bảng hiển thị</h3>
+      <table style="border: 1px solid #202020">
+        <thead>
+          <tr>
+            <th>Họ Tên</th>
+            <th>Phòng ban</th>
+            <th>Giới tính</th>
+            <th>Ngày sinh</th>
+            <th>Kĩ năng</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nguyễn Đình Thông</td>
+            <td>IT</td>
+            <td>Nam</td>
+            <td>14/10/1995</td>
+            <td>Lập trình</td>
+            <td><button>Sửa</button><button>Xóa</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer></footer>
+  </body>
+</html>

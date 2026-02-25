@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký khóa học</title>
+  </head>
+  <body>
+    <header><h1>Đăng kí khóa học</h1></header>
+    <main>
+      <h3>Form đăng ký</h3>
+      <label for="ten">Họ và tên:</label>
+      <input type="text" name="ten" id="ten" /> <br />
+      <label for="mail">Email: </label>
+      <input type="email" name="mail" id="mail" /> <br />
+      <label for="email">Số điện thoại: </label>
+      <input type="tel" name="phone" id="phone" /> <br />
+      <label>Chọn khóa học:</label>
+      <input type="checkbox" name="khoahoc" id="html" />
+      <label for="html">HTML</label>
+      <input type="checkbox" name="khoahoc" id="css" />
+      <label for="css">CSS</label>
+      <input type="checkbox" name="khoahoc" id="javascrip" />
+      <label for="javascrip">Javascrip</label> <br />
+      <label for="hinhthuc">Hình thức học:</label>
+      <input type="radio" name="hinhthuc" id="online" />
+      <label for="online">Online</label>
+      <input type="radio" name="hinhthuc" id="offline" />
+      <label for="offline">Offline</label> <br />
+      <label for="note">Ghi chú:</label>
+      <textarea name="note" id="note"></textarea> <br />
+      <button>Đăng ký</button> <br />
+      <h3>Bảng danh sách học viên:</h3>
+      <table style="border: 1px solid">
+        <thead>
+          <tr>
+            <th>Tên</th>
+            <th>Email</th>
+            <th>Khóa học</th>
+            <th>Hình thức</th>
+            <th>Ghi chú</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nguyễn Đình Thông</td>
+            <td>k9dinhthong@gmail.com</td>
+            <td>HTML</td>
+            <td>Online</td>
+            <td>ADSE</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer></footer>
+  </body>
+</html>
