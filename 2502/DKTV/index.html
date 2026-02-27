@@ -1,9 +1,77 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Đăng ký thành viên</title>
   </head>
-  <body></body>
+  <body>
+    <header><h1>Đăng Ký Hồ Sơ Thành Viên</h1></header>
+    <main>
+      <form>
+        <div>
+          <h3>Thông tin cá nhân</h3>
+          <label for="ten">Họ và tên: </label>
+          <input type="text" name="ten" id="ten" required /> <br />
+          <label for="ngay">Ngày sinh: </label>
+          <input type="date" name="ngay" id="ngay" required /> <br />
+          <label for="gioitinh">Giới tính: </label>
+          <input type="radio" name="gioitinh" id="Nam" required />
+          <label for="Nam">Nam</label>
+          <input type="radio" name="gioitinh" id="Nữ" required />
+          <label for="Nữ">Nữ</label> <br />
+          <label for="anh">Ảnh đại diện: </label>
+          <input type="file" name="anh" id="anh" /> <br aria-required="" />
+        </div>
+        <div>
+          <h3>Thông tin liên hệ</h3>
+          <label for="mail">Email</label>
+          <input type="email" name="mail" id="mail" required /> <br />
+          <label for="sodienthoai">Số điện thoại: </label>
+          <input type="tel" name="sodienthoai" id="sodienthoai" required />
+          <br />
+          <label for="diachi">Địa chỉ: </label>
+          <textarea name="diachi" id="diachi"></textarea>
+        </div>
+        <div>
+          <h3>Thông tin tài khoản</h3>
+          <label for="acc">Tên đăng nhập: </label>
+          <input type="text" name="acc" id="acc" required /> <br />
+          <label for="pass">Mật khẩu: </label>
+          <input type="password" name="pass" id="pass" required /> <br />
+          <label for="cfpass">Nhập lại mật khẩu: </label>
+          <input type="password" name="cfpass" id="cfpass" required /> <br />
+          <label for="vaitro">Vai trò</label>
+          <select>
+            <option value="User">User</option>
+            <option value="Admin">Admin</option>
+            <option value="Editor">Editor</option>
+          </select>
+        </div>
+        <div>
+          <h3>Sở thích</h3>
+          <label for="sothich"></label>
+          <input type="checkbox" name="sothich" id="Thể Thao" required />
+          <label for="Thể Thao">Thể Thao</label>
+          <input type="checkbox" name="sothich" id="Âm nhạc" required />
+          <label for="Âm nhạc">Âm nhạc</label>
+          <input type="checkbox" name="sothich" id="Du lịch" required />
+          <label for="Du lịch">Du lịch</label>
+          <input type="checkbox" name="sothich" id="Công nghệ" required />
+          <label for="Công nghệ">Công nghệ</label>
+        </div>
+        <div>
+          <label for="Dieukhoan"></label>
+          <input type="checkbox" name="Dieukhoan" id="Dieukhoan" />
+          <label for="Dieukhoan">Tôi đồng ý với điều khoản</label>
+        </div>
+        <div>
+          <button>Đăng ký</button>
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
 </html>
