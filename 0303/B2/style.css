@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 0px;
+}
+body {
+  display: flex;
+}
+.Tab1 {
+  width: 70%;
+}
+.Tab2 {
+  width: 30%;
+}
+input {
+  display: block;
+}
