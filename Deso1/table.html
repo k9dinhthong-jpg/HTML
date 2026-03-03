@@ -3,7 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      table {
+        text-transform: uppercase;
+        text-align: center;
+        border-collapse: collapse;
+      }
+      thead {
+        background-color: #cccccc;
+      }
+      tr,
+      td,
+      th {
+        padding: 20px 30px 20px 30px;
+      }
+      td,
+      th {
+        border: 1px solid #000000;
+      }
+      .ligth {
+        background-color: #f2f2f2;
+      }
+      .white {
+        background-color: #ffffff;
+      }
+      .dark {
+        background-color: #c2c2c2;
+        color: #000000;
+        font-weight: bold;
+      }
+    </style>
     <title>Question-1</title>
   </head>
   <body>
@@ -16,34 +45,34 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td rowspan="3">zodiac</td>
-          <td>Full color</td>
+        <tr class="ligth">
+          <td class="dark" rowspan="3">zodiac</td>
+          <td class="dark">Full color</td>
           <td>A2</td>
           <td>A3</td>
           <td>A4</td>
         </tr>
-        <tr>
-          <td>Black and white</td>
+        <tr class="white">
+          <td class="dark">Black and white</td>
           <td>A1</td>
           <td>A2</td>
           <td>A3</td>
         </tr>
-        <tr>
-          <td>Sepia</td>
+        <tr class="ligth">
+          <td class="dark">Sepia</td>
           <td>A3</td>
           <td>A4</td>
           <td>A5</td>
         </tr>
-        <tr>
-          <td rowspan="2">Angels</td>
-          <td>Black and white</td>
+        <tr class="white">
+          <td class="dark" rowspan="2">Angels</td>
+          <td class="dark">Black and white</td>
           <td>A1</td>
           <td>A3</td>
           <td>A4</td>
         </tr>
-        <tr>
-          <td>Sepia</td>
+        <tr class="ligth">
+          <td class="dark">Sepia</td>
           <td>A2</td>
           <td>A3</td>
           <td>A4</td>

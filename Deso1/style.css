@@ -1,11 +1,36 @@
 * {
-  color: #242424;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #666;
 }
-
-table {
-  text-transform: uppercase;
-  text-align: center;
+body {
+  background-color: #f4f4f4;
+  height: fit-content;
 }
-thead {
-  background-color: #cccccc;
+h1 {
+  font-size: 40px !important;
+  color: #000;
+}
+p {
+  font-size: 18px !important;
+}
+span {
+  display: inline-block;
+  width: 170px;
+}
+.box {
+  display: flex;
+  width: 1110px;
+  margin: 30px;
+}
+.box-1 {
+  background-color: #ffffff;
+  width: 555px;
+  height: fit-content;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+.box-2 {
+  width: 555px;
+  height: fit-content;
 }
