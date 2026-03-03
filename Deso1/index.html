@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Question-2</title>
   </head>
@@ -13,7 +12,7 @@
         <div class="box1-header">
           <h1>Contact us</h1>
           <p>We're open for any suggestion or just to have a chat</p>
-          <div style="display: flex; padding-top: 20px">
+          <div style="display: flex">
             <p>
               <span style="color: rgba(0, 0, 0, 0.2)">ADDRESS: </span
               ><span>198 West 21th Street, Suite 721 New York NY 10016</span>
@@ -28,9 +27,32 @@
             </p>
           </div>
         </div>
-        <div class="Box1-body"></div>
+        <div class="Box1-body">
+          <form>
+            <input type="text" id="name" name="name" placeholder="Name" />
+            <input type="email" id="mail" name="mail" placeholder="Email" />
+            <input type="text" id="sub" name="sub" placeholder="Subject" />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Create a message"
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="Box1-footer">
+          <h2>Follow us here</h2>
+          <div>
+            <a href="">FACEBOOK</a>
+            <a href="">TWITTER</a>
+            <a href="">DRIBBBLE</a>
+            <a href="">INSTAGRAM</a>
+          </div>
+        </div>
       </div>
-      <div class="box-2"><img src="./img/bg-q1.jpg" alt="" /></div>
+      <div class="box-2">
+        <img width="550px" src="./img/bg-q1.jpg" alt="" />
+      </div>
     </div>
   </body>
 </html>
