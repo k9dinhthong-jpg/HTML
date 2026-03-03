@@ -4,8 +4,10 @@
     HK Grotesk,
     sans-serif;
 }
-main {
+body {
   background-color: antiquewhite;
+}
+main {
   width: 1200px;
   height: fit-content;
   display: flex;
