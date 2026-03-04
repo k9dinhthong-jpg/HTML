@@ -55,6 +55,7 @@ button {
 .box {
   display: flex;
   width: 1110px;
+  height: 730px;
   margin: 30px;
 }
 .box-1 {
@@ -63,6 +64,9 @@ button {
   height: fit-content;
   padding-left: 48px;
   padding-right: 48px;
+  padding-bottom: 150px;
+
+  position: relative;
 }
 .box-2 {
   width: 555px;
@@ -70,12 +74,12 @@ button {
 }
 
 .Box1-body {
-  height: 70%;
   padding-top: 15px;
 }
 .Box1-footer {
   margin-top: 30px;
-  margin-bottom: 54px;
+  position: absolute;
+  bottom: 20px;
 }
 a {
   margin-right: 10px;
