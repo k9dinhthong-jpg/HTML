@@ -1,0 +1,48 @@
+* {
+  margin: 20px;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 80px;
+  background-color: #8598cc;
+  color: #ffffff;
+  font-weight: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.line {
+  text-align: center;
+  position: relative;
+}
+.line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -180px;
+  width: 30%;
+  height: 1px;
+  background: #000000;
+}
+.line::before {
+  content: "";
+  position: absolute;
+  left: -180px;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background: #000000;
+}
