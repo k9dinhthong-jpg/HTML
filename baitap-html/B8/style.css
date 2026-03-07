@@ -1,0 +1,29 @@
+* {
+  margin: 5px;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+div {
+  text-align: center;
+}
+body > p {
+  text-align: center;
+  line-height: 1.5;
+}
+div > p {
+  font-weight: bold;
+}
