@@ -1,4 +1,4 @@
-/* Câu 1 Thêm môn học */
+/* Thêm Môn*/
 let clickAddsubject = document.querySelectorAll(".qlsv-register button")[0];
 clickAddsubject.addEventListener("click", function (event) {
   event.preventDefault();
@@ -14,7 +14,7 @@ clickAddsubject.addEventListener("click", function (event) {
   subjectArea.appendChild(createSubject);
   subjectArea.appendChild(createLabel);
 });
-/* Câu 2 Thêm lớp */
+/* Thêm Lớp */
 let clickAddclass = document.querySelectorAll(".qlsv-register button")[1];
 clickAddclass.addEventListener("click", function (event) {
   event.preventDefault();
@@ -25,7 +25,7 @@ clickAddclass.addEventListener("click", function (event) {
   let classArea = document.querySelector("select[name='lop']");
   classArea.appendChild(createOption);
 });
-/* Câu 3 Thêm Sinh Viên mới vào bảng  */
+/* Thêm Sinh Viên */
 let clickAddstudent = document.querySelector("#qlsv_form");
 clickAddstudent.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -48,7 +48,7 @@ clickAddstudent.addEventListener("submit", function (event) {
 `;
   table.appendChild(newRow);
 });
-// /* Câu 4 và 5 Sửa Sinh Viên - Xóa Sinh Viên */
+// /* Sửa Sinh Viên - Xóa Sinh Viên */
 let editsv = document.querySelector(".qlsv-table tbody");
 editsv.addEventListener("click", function (event) {
   if (event.target.innerText === "Sửa") {

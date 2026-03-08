@@ -1,3 +1,4 @@
+/* Đăng nhập */
 function login(e) {
   e.preventDefault();
   let user = document.querySelector("#username").value;
