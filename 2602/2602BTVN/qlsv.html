@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style-qlsv.css" />
+    <link rel="stylesheet" href="./assets/css/style-qlsv.css" />
     <title>Tài khoản</title>
   </head>
   <body>
@@ -29,19 +29,24 @@
                 >Nữ</label
               >
             </p>
-            <p>
+            <p class="subject">
               <span>Môn học:</span>
-              <input type="checkbox" name="monhoc" id="toan" /><label for="toan"
-                >Toán</label
-              >
-              <input type="checkbox" name="monhoc" id="ly" /><label for="ly"
+              <input
+                type="checkbox"
+                name="monhoc"
+                id="toan"
+                value="toan"
+              /><label for="toan">Toán</label>
+              <input type="checkbox" name="monhoc" id="ly" value="ly" /><label
+                for="ly"
                 >Lý</label
               >
-              <input type="checkbox" name="monhoc" id="hoa" /><label for="hoa"
+              <input type="checkbox" name="monhoc" id="hoa" value="hoa" /><label
+                for="hoa"
                 >Hóa</label
               >
-              <button>Thêm môn</button>
             </p>
+            <button>Thêm môn</button>
             <p>
               <span>Lớp:</span>
               <select name="lop">
@@ -95,6 +100,6 @@
         </div>
       </form>
     </main>
-    <script src="qlsv.js"></script>
+    <script src="./assets/js/qlsv.js"></script>
   </body>
 </html>
