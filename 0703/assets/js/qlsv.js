@@ -1,102 +1,93 @@
-/* Câu 1 Thêm môn học */
-let clickAddsubject = document.querySelectorAll(".qlsv-register button")[0];
-clickAddsubject.addEventListener("click", function (event) {
-  event.preventDefault();
-  let inputSubject = prompt("Nhập tên môn học:");
-  let createSubject = document.createElement("input");
-  createSubject.type = "checkbox";
-  createSubject.id = inputSubject;
-  createSubject.name = "monhoc";
-  let createLabel = document.createElement("label");
-  createLabel.htmlFor = inputSubject;
-  createLabel.innerText = inputSubject;
-  let subjectArea = document.querySelector(".subject");
-  subjectArea.appendChild(createSubject);
-  subjectArea.appendChild(createLabel);
+/* Thêm môn học*/
+let clickThemmon = document.querySelector("#id_themmon"); // Chon phần tử có id "id_themmon" và gán vào biến clickThemmon
+clickThemmon.addEventListener("click", function (event) {
+  event.preventDefault(); // Ngăn trang web tải lại khi click vào nút thêm môn học
+  let nhapMonmoi = prompt("Nhập tên môn học mới:"); // Hiển thị hộp thoại yêu cầu nhập tên môn học mới
+  let themMonmoi = document.createElement("input"); // Tạo một phần tử input mới
+  themMonmoi.type = "checkbox"; // Gán thuộc tính type của phần tử input mới là "checkbox"
+  themMonmoi.name = "monhoc"; // Gán thuộc tính name của phần tử input mới là "monhoc"
+  themMonmoi.value = nhapMonmoi; // Gán thuộc tính value của phần tử input mới bằng tên môn học mới người dùng nhập
+  themMonmoi.id = nhapMonmoi; // Gán thuộc tính id của phần tử input mới bằng tên môn học mới người dùng nhập
+  let vitriThemmonmoi = document.querySelector("#id_monhoc"); // Chọn phần tử có id "id_monhoc" và gán vào biến vitriThemmonmoi
+  let labelThemmonmoi = document.createElement("label"); // Tạo một phần tử label mới
+  labelThemmonmoi.htmlFor = nhapMonmoi; // Gán thuộc tính htmlFor của phần tử label mới bằng tên môn học mới người dùng nhập
+  labelThemmonmoi.textContent = nhapMonmoi; // Gán nội dung văn bản của phần tử label mới bằng tên môn học mới người dùng nhập
+  vitriThemmonmoi.appendChild(themMonmoi); // Thêm phần tử input mới vào phần tử có id "id_monhoc"
+  vitriThemmonmoi.appendChild(labelThemmonmoi); // Thêm phần tử label mới vào phần tử có id "id_monhoc"
 });
-/* Câu 2 Thêm lớp */
-let clickAddclass = document.querySelectorAll(".qlsv-register button")[1];
-clickAddclass.addEventListener("click", function (event) {
-  event.preventDefault();
-  let inputClass = prompt("Nhập tên lớp:");
-  let createOption = document.createElement("option");
-  createOption.value = inputClass;
-  createOption.innerText = inputClass;
-  let classArea = document.querySelector("select[name='lop']");
-  classArea.appendChild(createOption);
+/* Thêm lớp*/
+let clickThemlop = document.querySelector("#id_themlop"); // Chọn phần tử có id "id_themlop" và gán vào biến clickThemlop
+clickThemlop.addEventListener("click", function (event) {
+  event.preventDefault(); // Ngăn trang web tải lại khi click vào nút thêm lớp
+  let Nhaplopmoi = prompt("Nhập tên lớp mới:"); // Hiển thị hộp thoại yêu cầu nhập tên lớp mới
+  let Themlopmoi = document.createElement("option"); // Tạo một phần tử option mới
+  Themlopmoi.value = Nhaplopmoi; // Gán giá trị của phần tử option mới bằng tên lớp mới người dùng nhập
+  Themlopmoi.textContent = Nhaplopmoi; // Gán nội dung văn bản của phần tử option mới bằng tên lớp mới người dùng nhập
+  let VitriThemlopmoi = document.querySelector("#id_lop"); // Chọn phần tử có id "id_lop" và gán vào biến VitriThemlopmoi
+  VitriThemlopmoi.appendChild(Themlopmoi); // Thêm phần tử option mới vào phần tử có id "id_lop"
 });
-/* Câu 3 Thêm Sinh Viên mới vào bảng  */
-let clickAddstudent = document.querySelector("#qlsv_form");
-clickAddstudent.addEventListener("submit", function (event) {
-  event.preventDefault();
-  let tensv = document.querySelector("#tensv").value;
-  let namsinh = document.querySelector("#namsinh").value;
-  let gioitinh = document.querySelector("input[name='gioitinh']:checked").id;
-  let monhoc = document.querySelectorAll("input[name='monhoc']:checked");
-  monhoc = Array.from(monhoc).map((item) => item.id);
-  let lop = document.querySelector("select[name='lop']").value;
+/* Thêm sinh viên*/
+let clickThemsv = document.querySelector("#themsv"); // Chọn phần tử có id "themsv" và gán vào biến clickThemsv
+clickThemsv.addEventListener("click", function (event) {
+  event.preventDefault(); // Ngăn trang web tải lại khi click vào nút thêm sinh viên
+  let tensv = document.querySelector("#tensv").value; // Lấy giá trị của phần tử có id "tensv" và gán vào biến tensv
+  let namsinh = document.querySelector("#namsinh").value; // Lấy giá trị của phần tử có id "namsinh" và gán vào biến namsinh
+  let gioitinh = document.querySelector('input[name="gioitinh"]:checked').id; // Lấy giá trị của phần tử input có name "gioitinh" được chọn và gán vào biến gioitinh
+  let monhoc = document.querySelectorAll('input[name="monhoc"]:checked'); // Lấy tất cả phần tử input có name "monhoc" được chọn và gán vào biến monhoc
+  monhoc = Array.from(monhoc).map((item) => item.id); // Chuyển đổi NodeList monhoc thành mảng và lấy giá trị của mỗi phần tử checkbox được chọn
+  let lop = document.querySelector("#id_lop").value; // Lấy giá trị của phần tử có id "id_lop" và gán vào biến lop
   /* Thêm vào bảng */
-  let table = document.querySelector(".qlsv-table tbody");
-  if (editsvRow) {
-    let cells = editsvRow.querySelectorAll("td");
-
-    cells[0].innerText = tensv;
-    cells[1].innerText = lop;
-    cells[2].innerText = namsinh;
-    cells[3].innerText = gioitinh;
-    cells[4].innerText = monhoc;
-
-    editsvRow = null;
-
-    document.querySelector("#qlsv_form button[type='submit']").innerText =
-      "Thêm sinh viên";
-  } else {
-    let newRow = document.createElement("tr");
-    newRow.innerHTML = `
-      <td>${tensv}</td>
-      <td>${lop}</td>
-      <td>${namsinh}</td>
+  let bảng = document.querySelector(".qlsv-table tbody"); // Chọn phần tử tbody của bảng và gán vào biến bảng
+  if (document.querySelector("#themsv").innerText === "Thêm sinh viên") {
+    let hàngmới = document.createElement("tr"); // Tạo một phần tử tr mới
+    hàngmới.innerHTML = `
+    <td>${tensv}</td>
+    <td>${lop}</td>
+    <td>${namsinh}</td>
     <td>${gioitinh}</td>
-    <td>${monhoc}</td>
-    <td><button type="button">Sửa</button><button type="button">Xóa</button></td>
-`;
-    table.appendChild(newRow);
+    <td>${monhoc.join(", ")}</td>
+    <td><button type="button" name="Sửa" >Sửa</button><button type="button" name="Xóa" >Xóa</button></td>
+  `;
+    bảng.appendChild(hàngmới); // Thêm hàng mới vào bảng
+  } else if (document.querySelector("#themsv").innerText === "Cập nhật") {
+    let cotsua = document.querySelectorAll("td"); // Lấy tất cả phần tử td trong bảng và gán vào biến cotsua
+    cotsua[0].innerText = tensv; // Cập nhật nội dung của cột tên sinh viên bằng giá trị của biến tensv
+    cotsua[1].innerText = lop; // Cập nhật nội dung của cột lớp bằng giá trị của biến lop
+    cotsua[2].innerText = namsinh; // Cập nhật nội dung của cột năm sinh bằng giá trị của biến namsinh
+    cotsua[3].innerText = gioitinh; // Cập nhật nội dung của cột giới tính bằng giá trị của biến gioitinh
+    cotsua[4].innerText = monhoc.join(", "); // Cập nhật nội dung của cột môn học bằng giá trị của biến monhoc, được nối thành chuỗi với dấu ", " làm dấu phân cách
+    document.querySelector("#themsv").innerText = "Thêm sinh viên"; // Thay đổi nội dung của phần tử có id "themsv" thành "Thêm sinh viên"
   }
-  document.querySelector("#qlsv_form").reset();
+  document.querySelector("#qlsv_form").reset(); // Đặt lại giá trị của form có id "qlsv_form" về mặc định sau khi thêm hoặc cập nhật sinh viên
 });
-// /* Câu 4 và 5 Sửa Sinh Viên - Xóa Sinh Viên */
-let editsv = document.querySelector(".qlsv-table tbody");
-let editsvRow = null;
-editsv.addEventListener("click", function (event) {
+/* Sửa hoặc Xóa sinh viên */
+let suaxoaSinhvien = document.querySelector(".qlsv-table tbody"); // Chọn phần tử tbody của bảng và gán vào biến suaxoaSinhvien
+suaxoaSinhvien.addEventListener("click", function (event) {
   if (event.target.innerText === "Sửa") {
-    document.querySelector("#qlsv_form button[type='submit']").innerText =
-      "Cập nhật";
-    let row = event.target.closest("tr");
-    editsvRow = row;
-    let cells = row.querySelectorAll("td");
-    let tensv = cells[0].innerText;
-    let lop = cells[1].innerText;
-    let namsinh = cells[2].innerText;
-    let gioitinh = cells[3].innerText;
-    let monhoc = cells[4].innerText.split(",");
-    document.querySelector("#tensv").value = tensv;
-    document.querySelector("select[name='lop']").value = lop;
-    let parts = namsinh.split("/");
-    let formatDate = parts[2] + "-" + parts[1] + "-" + parts[0];
-    document.querySelector("#namsinh").value = formatDate;
-    document.querySelector(`input[name='gioitinh'][id='${gioitinh}']`).checked =
-      true;
+    // Kiểm tra nếu phần tử được click có nội dung là "Sửa"
+    document.querySelector("#themsv").innerText = "Cập nhật"; // Thay đổi nội dung của phần tử có id "themsv" thành "Cập nhật"
+    let hangsua = event.target.closest("tr"); // Lấy phần tử tr gần nhất của phần tử được click và gán vào biến hangsua
+    let cotsua = hangsua.querySelectorAll("td"); // Lấy tất cả phần tử td trong hàng được sửa và gán vào biến cotsua
+    let tensv = cotsua[0].innerText; // Lấy nội dung của cột tên sinh viên và gán vào biến tensv
+    document.querySelector("#tensv").value = tensv; // Gán giá trị của phần tử có id "tensv" bằng giá trị của biến tensv
+    let lop = cotsua[1].innerText; // Lấy nội dung của cột lớp và gán vào biến lop
+    document.querySelector("#id_lop").value = lop; // Gán giá trị của phần tử có id "id_lop" bằng giá trị của biến lop
+    let namsinh = cotsua[2].innerText; // Lấy nội dung của cột năm sinh và gán vào biến namsinh
+    let parts = namsinh.split("/"); // Tách chuỗi năm sinh thành mảng các phần tử bằng cách sử dụng dấu "/" làm dấu phân cách và gán vào biến parts
+    let formatDate = parts[2] + "-" + parts[1] + "-" + parts[0]; // Định dạng lại năm sinh theo định dạng "YYYY-MM-DD" và gán vào biến formatDate
+    document.querySelector("#namsinh").value = formatDate; // Gán giá trị của phần tử có id "namsinh" bằng năm sinh đã được định dạng
+    let gioitinh = cotsua[3].innerText; // Lấy nội dung của cột giới tính và gán vào biến gioitinh
+    document.querySelector(`input[name="gioitinh"][id="${gioitinh}"]`).checked =
+      true; // Đánh dấu phần tử input có name "gioitinh" và id bằng giá trị của biến gioitinh là được chọn
+    let monhoc = cotsua[4].innerText.split(","); // Lấy nội dung của cột môn học, tách thành mảng và gán vào biến monhoc
     monhoc.forEach((item) => {
-      let checkbox = document.querySelector(
-        `input[name='monhoc'][id='${item}']`,
-      );
-      if (checkbox) {
-        checkbox.checked = true;
-      }
+      // Duyệt qua từng phần tử trong mảng monhoc
+      document.querySelector(`input[name="monhoc"][id="${item}"]`).checked =
+        true; // Đánh dấu phần tử input có name "monhoc" và id bằng giá trị của item là được chọn
     });
-  }
-  if (event.target.innerText === "Xóa") {
-    let row = event.target.closest("tr");
-    row.remove();
+  } else if (event.target.innerText === "Xóa") {
+    // Kiểm tra nếu phần tử được click có nội dung là "Xóa"
+    let hangxoa = event.target.closest("tr"); // Lấy phần tử tr gần nhất của phần tử được click và gán vào biến hangxoa
+    hangxoa.remove(); // Xóa hàng khỏi bảng
   }
 });

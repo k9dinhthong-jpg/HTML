@@ -1,13 +1,14 @@
-/* Đăng nhập */
-function login(e) {
-  e.preventDefault();
-  let user = document.querySelector("#username").value;
-  let pass = document.querySelector("#password").value;
-  if (user === "admin" && pass === "123456") {
+let clickLogin = document.querySelector("button[type='submit']"); // Bộ chọn CSS ( Atribute Selector )
+// let clickLogin = document.querySelector(".class-login-button"); // Bộ chọn CSS ( Class Selector )
+// let clickLogin = document.querySelector("#id-login-button"); // Bộ chọn CSS ( ID Selector )]");
+clickLogin.addEventListener("click", function (event) {
+  event.preventDefault();
+  let username = document.querySelector("input[name='username']").value;
+  let password = document.querySelector("input[name='password']").value;
+  if (username === "admin" && password === "Zxcv1234") {
+    alert("Đăng nhập thành công!");
     window.location.href = "qlsv.html";
   } else {
-    alert("Sai tài khoản hoặc mật khẩu!");
+    alert("Tên đăng nhập hoặc mật khẩu không đúng !!!");
   }
-}
-let clickLogin = document.querySelector(".click-Login");
-clickLogin.addEventListener("click", login);
+});

@@ -14,66 +14,49 @@
           <div class="qlsv-register">
             <p>
               <span>Tên sinh viên:</span>
-              <input type="text" name="tensv" id="tensv" required />
+              <input type="text" name="tensv" id="tensv" />
             </p>
             <p>
               <span>Năm sinh:</span>
-              <input type="date" name="namsinh" id="namsinh" required />
+              <input type="date" name="namsinh" id="namsinh" />
             </p>
             <p>
               <span>Giới tính:</span>
-              <input type="radio" name="gioitinh" id="Nam" required /><label
-                for="Nam"
+              <input type="radio" name="gioitinh" id="Nam" /><label for="Nam"
                 >Nam</label
               >
-              <input type="radio" name="gioitinh" id="Nữ" required /><label
-                for="Nữ"
+              <input type="radio" name="gioitinh" id="Nữ" /><label for="Nữ"
                 >Nữ</label
               >
             </p>
-            <p class="class_monhoc" id="id_monhoc">
+            <p class="subject">
               <span>Môn học:</span>
               <input
                 type="checkbox"
                 name="monhoc"
                 id="Toán"
                 value="Toán"
-                required
               /><label for="Toán">Toán</label>
-              <input
-                type="checkbox"
-                name="monhoc"
-                id="Lý"
-                value="Lý"
-                required
-              /><label for="Lý">Lý</label>
-              <input
-                type="checkbox"
-                name="monhoc"
-                id="Hóa"
-                value="Hóa"
-                required
-              /><label for="Hóa">Hóa</label>
+              <input type="checkbox" name="monhoc" id="Lý" value="Lý" /><label
+                for="Lý"
+                >Lý</label
+              >
+              <input type="checkbox" name="monhoc" id="Hóa" value="Hóa" /><label
+                for="Hóa"
+                >Hóa</label
+              >
             </p>
-            <button type="button" id="id_themmon">Thêm môn</button>
+            <button>Thêm môn</button>
             <p>
               <span>Lớp:</span>
-              <select
-                name="lop"
-                required
-                name="name_lop"
-                id="id_lop"
-                class="id_lop"
-              >
+              <select name="lop">
                 <option value="A">A</option>
                 <option value="B">B</option>
                 <option value="C">C</option>
               </select>
-              <span
-                ><button type="button" id="id_themlop">Thêm lớp</button></span
-              >
+              <span><button>Thêm lớp</button></span>
             </p>
-            <button type="submit" id="themsv">Thêm sinh viên</button>
+            <button type="submit">Thêm sinh viên</button>
           </div>
           <div>
             <table class="qlsv-table">
@@ -95,8 +78,8 @@
                   <td>Nam</td>
                   <td>Toán</td>
                   <td>
-                    <button type="button" name="Sửa">Sửa</button
-                    ><button type="button" name="Xóa">Xóa</button>
+                    <button type="button">Sửa</button
+                    ><button type="button">Xóa</button>
                   </td>
                 </tr>
                 <tr>
@@ -106,8 +89,8 @@
                   <td>Nam</td>
                   <td>Lý,Hóa</td>
                   <td>
-                    <button type="button" name="Sửa">Sửa</button
-                    ><button type="button" name="Xóa">Xóa</button>
+                    <button type="button">Sửa</button
+                    ><button type="button">Xóa</button>
                   </td>
                 </tr>
                 <tr>
@@ -117,8 +100,8 @@
                   <td>Nam</td>
                   <td>Hóa</td>
                   <td>
-                    <button type="button" name="Sửa">Sửa</button
-                    ><button type="button" name="Xóa">Xóa</button>
+                    <button type="button">Sửa</button
+                    ><button type="button">Xóa</button>
                   </td>
                 </tr>
               </tbody>
