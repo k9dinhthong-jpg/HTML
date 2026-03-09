@@ -5,7 +5,7 @@ clickLogin.addEventListener("click", function (event) {
   event.preventDefault();
   let username = document.querySelector("input[name='username']").value;
   let password = document.querySelector("input[name='password']").value;
-  if (username === "admin" && password === "Zxcv1234") {
+  if (username === "admin" && password === "123456") {
     alert("Đăng nhập thành công!");
     window.location.href = "qlsv.html";
   } else {
