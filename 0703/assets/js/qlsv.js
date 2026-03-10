@@ -50,7 +50,7 @@ clickThemsv.addEventListener("click", function (event) {
   `;
     bảng.appendChild(hàngmới); // Thêm hàng mới vào bảng
   } else if (document.querySelector("#themsv").innerText === "Cập nhật") {
-    let cotsua = document.querySelectorAll("td"); // Lấy tất cả phần tử td trong bảng và gán vào biến cotsua
+    let cotsua = hangsua.querySelectorAll("td"); // Lấy tất cả phần tử td trong hàng được sửa và gán vào biến cotsua
     cotsua[0].innerText = tensv; // Cập nhật nội dung của cột tên sinh viên bằng giá trị của biến tensv
     cotsua[1].innerText = lop; // Cập nhật nội dung của cột lớp bằng giá trị của biến lop
     cotsua[2].innerText = namsinh; // Cập nhật nội dung của cột năm sinh bằng giá trị của biến namsinh
@@ -61,21 +61,21 @@ clickThemsv.addEventListener("click", function (event) {
   document.querySelector("#qlsv_form").reset(); // Đặt lại giá trị của form có id "qlsv_form" về mặc định sau khi thêm hoặc cập nhật sinh viên
 });
 /* Sửa hoặc Xóa sinh viên */
+
 let suaxoaSinhvien = document.querySelector(".qlsv-table tbody"); // Chọn phần tử tbody của bảng và gán vào biến suaxoaSinhvien
+let hangsua = null; // Khởi tạo biến hangsua với giá trị null
 suaxoaSinhvien.addEventListener("click", function (event) {
   if (event.target.innerText === "Sửa") {
     // Kiểm tra nếu phần tử được click có nội dung là "Sửa"
     document.querySelector("#themsv").innerText = "Cập nhật"; // Thay đổi nội dung của phần tử có id "themsv" thành "Cập nhật"
-    let hangsua = event.target.closest("tr"); // Lấy phần tử tr gần nhất của phần tử được click và gán vào biến hangsua
+    hangsua = event.target.closest("tr"); // Lấy phần tử tr gần nhất của phần tử được click và gán vào biến hangsua
     let cotsua = hangsua.querySelectorAll("td"); // Lấy tất cả phần tử td trong hàng được sửa và gán vào biến cotsua
     let tensv = cotsua[0].innerText; // Lấy nội dung của cột tên sinh viên và gán vào biến tensv
     document.querySelector("#tensv").value = tensv; // Gán giá trị của phần tử có id "tensv" bằng giá trị của biến tensv
     let lop = cotsua[1].innerText; // Lấy nội dung của cột lớp và gán vào biến lop
     document.querySelector("#id_lop").value = lop; // Gán giá trị của phần tử có id "id_lop" bằng giá trị của biến lop
     let namsinh = cotsua[2].innerText; // Lấy nội dung của cột năm sinh và gán vào biến namsinh
-    let parts = namsinh.split("/"); // Tách chuỗi năm sinh thành mảng các phần tử bằng cách sử dụng dấu "/" làm dấu phân cách và gán vào biến parts
-    let formatDate = parts[2] + "-" + parts[1] + "-" + parts[0]; // Định dạng lại năm sinh theo định dạng "YYYY-MM-DD" và gán vào biến formatDate
-    document.querySelector("#namsinh").value = formatDate; // Gán giá trị của phần tử có id "namsinh" bằng năm sinh đã được định dạng
+    document.querySelector("#namsinh").value = namsinh; // Gán giá trị của phần tử có id "namsinh" bằng năm sinh đã được định dạng
     let gioitinh = cotsua[3].innerText; // Lấy nội dung của cột giới tính và gán vào biến gioitinh
     document.querySelector(`input[name="gioitinh"][id="${gioitinh}"]`).checked =
       true; // Đánh dấu phần tử input có name "gioitinh" và id bằng giá trị của biến gioitinh là được chọn
