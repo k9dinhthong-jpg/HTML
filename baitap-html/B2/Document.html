@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://127.0.0.1:5500/?name=&date=&phone=on&brand=on -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Document_files/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header><h2>Quản lý sản phẩm</h2></header>
+      <main>
+        <form id="SanPham">
+          <div>
+            <label for="name">Tên sản phẩm:</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div>
+            <label for="date">Ngày nhập:</label>
+            <input type="date" name="date" id="date">
+          </div>
+          <div class="box">
+            <p>Loại sản phẩm:</p>
+            <input type="checkbox" name="LoaiSP" id="phone"><label for="phone">Điện thoại</label>
+            <input type="checkbox" name="LoaiSP" id="laptop"><label for="laptop">Laptop</label>
+            <input type="checkbox" name="LoaiSP" id="tablet"><label for="tablet">Tablet</label>
+          </div>
+          <button class="typesp">Thêm loại</button>
+          <div class="box" id="Hang">
+            <p>Hãng:</p>
+            <input type="radio" name="brand" id="Apple" required=""><label for="Apple">Apple</label>
+            <input type="radio" name="brand" id="SamSung" required=""><label for="SamSung">SamSung</label>
+          </div>
+          <button class="brand" style="display: block">Thêm hãng</button>
+          <button class="submit" type="submit">Thêm sản phẩm</button>
+        </form>
+      </main>
+      <footer>
+        <table>
+          <thead>
+            <tr>
+              <th>Tên sản phẩm</th>
+              <th>Hãng</th>
+              <th>Ngày nhập</th>
+              <th>Loại sản phẩm</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Iphone 13</td>
+              <td>Apple</td>
+              <td>10/02/23</td>
+              <td>Điện thoại</td>
+            </tr>
+            <tr>
+              <td>Galaxy Tab</td>
+              <td>Samsung</td>
+              <td>01/01/22</td>
+              <td>Tablet</td>
+            </tr>
+            <tr>
+              <td>Dell XPS</td>
+              <td>Dell</td>
+              <td>12/05/23</td>
+              <td>Laptop</td>
+            </tr>
+          </tbody>
+        </table>
+      </footer>
+    </div>
+    <script src="./Document_files/qlsp.js"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: auto;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  background-color: #e6e6e6;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+}
+input {
+  text-align: center;
+  padding: 5px;
+  display: inline-block;
+  width: 150px;
+}
+form > div {
+  margin-bottom: 10px;
+}
+.box > label {
+  display: inline-block;
+  width: 80px;
+}
+.box > input {
+  display: inline-block;
+  width: 30px;
+}
+.submit {
+  margin-left: 130px;
+  padding: 10px;
+}
+p {
+  padding-bottom: 5px;
+}
+td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px 20px 5px 20px;
+}
+th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px 20px 5px 20px;
+}
+table {
+  margin-top: 15px;
+  border-collapse: collapse;
+}
