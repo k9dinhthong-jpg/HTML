@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Movie Demo</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        background: #111;
+        color: white;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 20px;
+      }
+
+      #movies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .movie {
+        background: #222;
+        padding: 10px;
+        width: 200px;
+        border-radius: 10px;
+      }
+
+      .movie img {
+        width: 100%;
+      }
+
+      button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+
+      #player {
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Movie Website Demo</h1>
+
+    <div id="movies"></div>
+
+    <div id="player"></div>
+
+    <script>
+      const movies = [
+        {
+          title: "Big Buck Bunny",
+          poster:
+            "https://peach.blender.org/wp-content/uploads/title_anouncement.jpg",
+          video: "https://www.w3schools.com/html/mov_bbb.mp4",
+        },
+
+        {
+          title: "Bear Video",
+          poster: "https://dummyimage.com/300x450/444/fff&text=Movie+2",
+          video: "https://www.w3schools.com/html/movie.mp4",
+        },
+
+        {
+          title: "Demo Movie",
+          poster: "https://dummyimage.com/300x450/333/fff&text=Movie+3",
+          video: "https://www.w3schools.com/html/mov_bbb.mp4",
+        },
+      ];
+
+      const container = document.getElementById("movies");
+
+      movies.forEach((movie) => {
+        let div = document.createElement("div");
+
+        div.className = "movie";
+
+        div.innerHTML = `
+<h3>${movie.title}</h3>
+<img src="${movie.poster}">
+<button onclick="watchMovie('${movie.video}')">Watch</button>
+`;
+
+        container.appendChild(div);
+      });
+
+      function watchMovie(video) {
+        document.getElementById("player").innerHTML = `
+<h2>Now Playing</h2>
+<video width="800" controls autoplay>
+<source src="${video}" type="video/mp4">
+</video>
+`;
+      }
+    </script>
+  </body>
+</html>

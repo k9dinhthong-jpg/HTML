@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  border: 5px solid #000000;
+}
+/* Phần đầu trang */
+.container > header {
+  background-color: #adb96e;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container > header > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.container > header > ul > li {
+  margin: 0px 10px;
+}
+.container > header > div > input {
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  padding-left: 30px;
+  position: relative;
+}
+.container > header > div > i {
+  position: absolute;
+  right: 165px;
+  top: 22px;
+}
+/* Phần thân trang */
+.container > main {
+  background-color: #ffffff;
+  padding: 10px 2px;
+}
+main > .box1 {
+  background-color: #005894;
+  color: #ffffff;
+  margin-bottom: 60px;
+  padding: 50px 200px 50px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > .box1 > h2 {
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+main > .box1 > p {
+  font-size: 20px;
+  font-weight: 100;
+}
+main > .box2 {
+  margin-bottom: 10px;
+  padding: 0px 30px 10px 30px;
+}
+.box2 > div {
+  margin-bottom: 30px;
+}
+.box2 > div > h3 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.box2 > div > p {
+  font-size: 25px;
+  font-weight: 100;
+}
+/* Phần chân trang */
+.container > footer {
+  background-color: #adb96e;
+  color: #000000;
+  padding: 30px 15px;
+  font-size: 20px;
+}

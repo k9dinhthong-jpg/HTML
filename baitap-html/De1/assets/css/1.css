@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.box {
+  margin-bottom: 20px;
+}
+.form-box1 {
+  background-color: #dfdfdf;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box1 > div > label {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 100px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.form-box1 > div > input,
+.form-box1 > div > select {
+  height: 20px;
+  padding-left: 5px;
+  font-size: 11px;
+  font-weight: bold;
+}
+.form-box1 > div > input {
+  width: 200px;
+  border: 1px solid #cf0606;
+}
+
+.form-box2 {
+  background-color: #dfdfdf;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+}
+.form-box2 > div > input,
+.form-box2 > div > select {
+  height: 20px;
+  padding-left: 0px;
+  font-size: 11px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.form-box2 > div > label {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 100px;
+  text-align: right;
+  font-weight: bold;
+}
+.form-box3 {
+  background-color: #dfdfdf;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-box3 > main > textarea {
+  text-align: left;
+  margin-top: 20px;
+  width: 700px;
+}
+.label-header {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.hide {
+  height: 25px;
+}
+.show {
+  height: 250px;
+}
