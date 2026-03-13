@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <title>Danh sách người dùng</title>
+  </head>
+  <body>
+    <section id="users">
+      <h2>Danh sách người dùng</h2>
+      <button id="load-btn">Tải dữ liệu</button>
+      <p id="status"></p>
+      <ul id="user-list"></ul>
+      <p id="error"></p>
+    </section>
+    <section id="find-user">
+      <h2>Tìm người dùng</h2>
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Nhập tên người dùng..."
+      />
+      <button id="search-btn">Tìm kiếm</button>
+      <p id="search-status"></p>
+      <ul id="search-results"></ul>
+      <p id="search-error"></p>
+    </section>
+    <section id="user-detail">
+      <h2>Chi tiết người dùng</h2>
+      <p id="detail-status"></p>
+      <div id="user-detail-info"></div>
+      <p id="detail-error"></p>
+    </section>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
