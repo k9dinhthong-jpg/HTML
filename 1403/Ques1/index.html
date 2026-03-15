@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Form Field</title>
+  </head>
+  <body>
+    <section>
+      <h3>Event Registration Form</h3>
+      <form action="">
+        <div>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div>
+          <label for="eventtype">Event Type</label>
+          <select name="eventtype" id="eventtype">
+            <option value="Workshop">Workshop</option>
+            <option value="Seminar">Seminar</option>
+            <option value="Webinar">Webinar</option>
+            <option value="Networking">Networking</option>
+          </select>
+        </div>
+        <div>
+          <label for="eventdate">Event Date</label>
+          <input type="dat" name="eventdate" id="eventdate" />
+        </div>
+        <div>
+          <label for="participation">Participation</label>
+          <select name="participation" id="participation">
+            <option value="Online">Online</option>
+            <option value="Offline">Offline</option>
+          </select>
+        </div>
+        <button type="submit" class="submit">Register Event</button>
+      </form>
+    </section>
+  </body>
+  <script src="/assets/js/main.js"></script>
+</html>
