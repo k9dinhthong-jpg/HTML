@@ -11,7 +11,7 @@ body {
   margin: auto;
 }
 
-/* Header style */
+/* ____________Header style____________ */
 .header-banner {
   width: 100%;
   margin: 0 auto;
@@ -57,7 +57,7 @@ body {
   font-size: 1.2rem;
 }
 
-/* Body style */
+/* ____________Body style____________ */
 main {
   margin: 3rem 0rem;
 }
@@ -68,9 +68,160 @@ main {
 #main-slider img {
   display: block;
   width: 100%;
-  height: 63vh;
+  height: 68vh;
   object-fit: cover;
 }
+
+.product {
+  width: 60%;
+  margin: 0 auto;
+}
+.product-hitachi > h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.product-kobelco > h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.product-komatsu > h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.item > ul {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+.item > button {
+  margin: 1rem auto;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  border: 1px solid #1c3275;
+  background-color: #1c3275;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.item > ul > li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+}
+.item > ul > li > a {
+  margin: 1rem 0rem;
+  padding: 0.5rem 1rem;
+  color: #0b3cce;
+  border: 1px solid #0b3cce;
+  font-size: 1.4rem;
+}
+
+.item img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.introduction {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.introduction-left > button {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  border: 1px solid #1c3275;
+  background-color: #1c3275;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.introduction-left,
+.introduction-right {
+  width: 50%;
+}
+
+.introduction-left > h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.introduction-left > span {
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #636363;
+}
+
+.featured-news {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.featured-news > h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.featured-news > ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-news > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+/* ____________Footer style____________ */
+footer {
+  width: 100%;
+  margin: 0 auto;
+}
+.footer-top {
+  width: 100%;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  background-color: #232323;
+  color: #ffffff;
+}
+.footer-top > div > ul > li > a {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  width: 100%;
+  padding: 1rem 0rem;
+  text-align: center;
+  background-color: #000000;
+  color: #636363;
+  font-size: 1.2rem;
+}
+
+/*____________________ Ảnh slider ___________________ */
+
 #main-slider .owl-nav {
   position: absolute;
   top: 45%;
@@ -80,7 +231,6 @@ main {
   margin-top: 0;
   pointer-events: none;
 }
-/* Nút trái phải */
 #main-slider .owl-nav button.owl-prev,
 #main-slider .owl-nav button.owl-next {
   position: absolute;
@@ -107,39 +257,12 @@ main {
   transform: translateX(1px) translateY(-2px);
 }
 
-/* Nút bên trái */
 #main-slider .owl-nav button.owl-prev {
   left: 3%;
 }
 
-/* Nút bên phải */
 #main-slider .owl-nav button.owl-next {
   right: 3%;
 }
 
-/* footer style */
-footer {
-  width: 100%;
-  margin: 0 auto;
-}
-.footer-top {
-  width: 100%;
-  padding: 2rem 3rem;
-  display: flex;
-  justify-content: center;
-  gap: 10%;
-  background-color: #232323;
-  color: #ffffff;
-}
-.footer-top > div > ul > li > a {
-  color: #ffffff;
-}
-
-.footer-bottom {
-  width: 100%;
-  padding: 1rem 0rem;
-  text-align: center;
-  background-color: #000000;
-  color: #636363;
-  font-size: 1.2rem;
-}
+/* ----------------------------------------*/
