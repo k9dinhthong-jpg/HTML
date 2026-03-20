@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <div class="header-left"><a href="#">web888.vn</a></div>
+        <div class="header-right">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </header>
+      <main>
+        <form class="box-loginform" action="">
+          <div class="form-header"><h1>Login Form</h1></div>
+          <p>Sign in to start your session</p>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+            autocomplete="username"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            autocomplete="current-password"
+            placeholder="Password"
+            required
+          />
+          <div class="btn-all">
+            <button type="button" class="register" id="resgister">
+              REGISTER
+            </button>
+            <button type="submit" class="signin" id="signin">Sign in</button>
+          </div>
+        </form>
+      </main>
+      <footer>@copyright; 2024 web888.vn</footer>
+    </section>
+    <script src="./assets/js/login.js"></script>
+  </body>
+</html>

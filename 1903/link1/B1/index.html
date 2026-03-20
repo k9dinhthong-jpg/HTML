@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .error {
+        border: 1px solid red;
+      }
+      .error-message {
+        color: red;
+        font-size: 0.875em;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <form action="">
+        <h1>Libarary Visit Registtration</h1>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" />
+          <p id="err_name"></p>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" />
+          <p id="err_email"></p>
+        </div>
+        <div>
+          <label for="">Visit Type:</label>
+          <select name="visit_type" id="visit_type">
+            <option value="Reading">Reading</option>
+            <option value="Borrow Book">Borrow Book</option>
+            <option value="Reseach">Reseach</option>
+          </select>
+          <p id="err_visit_type"></p>
+        </div>
+        <div>
+          <label for="">Visit Time:</label>
+          <input
+            type="radio"
+            name="visit_time"
+            id="Morning"
+            value="Morning"
+          /><label for="Morning">Morning</label>
+          <input
+            type="radio"
+            name="visit_time"
+            id="Afternoon"
+            value="Afternoon"
+          /><label for="Afternoon">Afternoon</label>
+          <p id="err_visit_time"></p>
+        </div>
+        <button type="submit">Submit Registration</button>
+      </form>
+      <p id="success-message"></p>
+    </section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

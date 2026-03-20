@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>Trang Chủ</title>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <div class="header-left"><a href="#">WEB888.VN</a></div>
+        <div class="header-right">
+          <a href="#">HOME</a>
+          <a href="./shop.html">SHOP</a>
+          <a href="#">CONTACT</a>
+          <a href="#" id="username"></a>
+          <a href="" id="logout"></a>
+        </div>
+      </header>
+      <main>
+        <div class="box-register">
+          <h3>ADD NEW PRODUCT</h3>
+          <form id="addProductForm">
+            <div>
+              <label for="name">Product Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div>
+              <label for="category">Category:</label>
+              <input type="text" id="category" name="category" required />
+            </div>
+            <div>
+              <label for="releasedate">Release Date:</label>
+              <input type="date" id="releasedate" name="releasedate" required />
+            </div>
+            <div>
+              <label for="price">Price:</label>
+              <input type="number" id="price" name="price" required />
+            </div>
+            <button type="submit" id="addnewproduct">Add New Product</button>
+          </form>
+          <p id="message"></p>
+        </div>
+        <div class="box-product">
+          <h2>PRODUCTS</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Release Date</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </main>
+    </section>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

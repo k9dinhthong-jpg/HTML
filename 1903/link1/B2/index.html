@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="addbook">
+      <form action="">
+        <div>
+          <label for="booktitle">Book Title:</label
+          ><input type="text" id="booktitle" name="booktitle" />
+        </div>
+        <div>
+          <label for="category">Category:</label
+          ><select id="category" name="category">
+            <option value="Fiction">Fiction</option>
+            <option value="Science">Science</option>
+            <option value="History">History</option>
+            <option value="Technology">Technology</option>
+          </select>
+        </div>
+        <button type="submit">[ Add Book ]</button>
+      </form>
+    </section>
+    <section class="booklist">
+      <table>
+        <thead>
+          <tr>
+            <th>Book Title</th>
+            <th>Category</th>
+            <th>Borrow Count</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+    <section class="borrowCount">
+      <table>
+        <thead>
+          <tr>
+            <th>Borrow Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span>Fiction:</span><span class="fiction"></span></td>
+            <td><span>Science:</span><span class="science"></span></td>
+            <td><span>History:</span><span class="history"></span></td>
+            <td><span>Technology:</span><span class="technology"></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

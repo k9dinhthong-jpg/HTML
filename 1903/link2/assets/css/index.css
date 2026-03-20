@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  width: 100%;
+  margin: auto;
+  background-color: #eaebef;
+}
+.container {
+  width: fit-content;
+  padding: 0px 0px 20px 0px;
+  background-color: #ffffff;
+  margin: auto;
+}
+header {
+  background-color: #49b7e4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header a {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+}
+header a:hover {
+  cursor: pointer;
+  color: #ff0000;
+}
+.box-register > h3 {
+  text-align: center;
+  padding: 15px 10px;
+  border-bottom: 2px solid #e8eded;
+}
+.box-register form {
+  padding: 20px;
+}
+.box-register form label {
+  display: inline-block;
+  width: 120px;
+}
+.box-register form input {
+  text-align: center;
+  width: calc(95% - 120px);
+  padding: 5px 3px;
+  margin-bottom: 10px;
+}
+.box-register form button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 150px;
+  padding: 10px 15px;
+  background-color: #0d00c3;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+}
+.box-register form button:hover {
+  cursor: pointer;
+  background-color: #e8a44c;
+}
+
+.box-product {
+  margin: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.box-product > h2 {
+  margin-bottom: 10px;
+}
+th {
+  border: 1px solid #000000;
+  padding: 5px;
+}
+td {
+  border: 1px solid #000000;
+  padding: 5px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}

@@ -21,4 +21,3 @@ window.addEventListener("scroll", function () {
     sitenav.classList.remove("sticky-top");
   }
 });
-
