@@ -21,3 +21,12 @@ window.addEventListener("scroll", function () {
     sitenav.classList.remove("sticky-top");
   }
 });
+// Làm sáng thẻ khi trang đang ở thẻ đó
+const navLinks = document.querySelectorAll(".site-nav .nav-link");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", function () {
+    navLinks.forEach((nav) => nav.classList.remove("active"));
+    this.classList.add("active");
+  });
+});

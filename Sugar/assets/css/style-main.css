@@ -56,6 +56,9 @@ body {
   list-style: none;
   font-size: 1.2rem;
 }
+.site-nav > ul > li > a:hover {
+  color: #ff002b;
+}
 
 /* ____________Body style____________ */
 main {
