@@ -2,29 +2,47 @@
   .header-banner h1 {
     font-size: 0.4rem;
   }
+  .header-banner {
+    padding: 0.6rem 1.6rem;
+  }
 }
 @media (min-width: 576px) {
   .header-banner h1 {
     font-size: 0.6rem;
+  }
+  .header-banner {
+    padding: 0.7rem 1.7rem;
   }
 }
 @media (min-width: 768px) {
   .header-banner h1 {
     font-size: 0.8rem;
   }
+  .header-banner {
+    padding: 0.8rem 1.8rem;
+  }
 }
 @media (min-width: 992px) {
   .header-banner h1 {
     font-size: 1rem;
+  }
+  .header-banner {
+    padding: 0.8rem 1.8rem;
   }
 }
 @media (min-width: 1200px) {
   .header-banner h1 {
     font-size: 1.2rem;
   }
+  .header-banner {
+    padding: 0.9rem 1.9rem;
+  }
 }
 @media (min-width: 1400px) {
   .header-banner h1 {
     font-size: 1.5rem;
+  }
+  .header-banner {
+    padding: 1rem 2rem;
   }
 }

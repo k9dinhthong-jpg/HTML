@@ -12,9 +12,7 @@ body {
 
 /* ____________Header style____________ */
 .header-banner {
-  width: 100%;
   margin: 0 auto;
-  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
