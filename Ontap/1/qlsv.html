@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-qlsv.css" />
+    <title>Quản Lý Sinh Viên</title>
+  </head>
+  <body>
+    <section>
+      <form action="">
+        <h1>Quản Lý Sinh Viên</h1>
+        <div>
+          <label for="name">Tên SV:</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div>
+          <label for="namsinh">Năm sinh:</label>
+          <input type="date" id="namsinh" name="namsinh" />
+        </div>
+        <div>
+          <label>Giới tính:</label>
+          <select id="gioitinh" name="gioitinh">
+            <option value="Nam">Nam</option>
+            <label for="Nam">Nam</label>
+            <option value="Nữ">Nữ</option>
+            <label for="Nữ">Nữ</label>
+          </select>
+        </div>
+        <div>
+          <label>Môn học:</label>
+          <input type="checkbox" name="monhoc" id="Toán" value="Toán" /><label
+            for="Toán"
+            >Toán</label
+          >
+          <input type="checkbox" name="monhoc" id="Lý" value="Lý" /><label
+            for="Lý"
+            >Lý</label
+          >
+          <input type="checkbox" name="monhoc" id="Hóa" value="Hóa" /><label
+            for="Hóa"
+            >Hóa</label
+          >
+          <button type="button" id="themmonhoc">Thêm môn</button>
+        </div>
+        <div>
+          <label for="Lop"> Lớp: </label>
+          <select name="Lop" id="Lop">
+            <option name="Lop" value="A">A</option>
+            <option name="Lop" value="B">B</option>
+            <option name="Lop" value="C">C</option>
+          </select>
+          <button type="button">Thêm Lớp</button>
+        </div>
+        <button type="submit">Thêm Sinh Viên</button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Tên</th>
+            <th>Lớp</th>
+            <th>Năm Sinh</th>
+            <th>Giới tính</th>
+            <th>Môn Học</th>
+            <th>Cập nhật</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+    <script src="main-qlsv.js"></script>
+  </body>
+</html>
