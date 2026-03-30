@@ -15,7 +15,7 @@ $(document).ready(function () {
 const sitenav = document.querySelector(".site-nav");
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY > 0) {
+  if (window.scrollY > window.innerHeight * 0.02) {
     sitenav.classList.add("sticky-top");
   } else {
     sitenav.classList.remove("sticky-top");

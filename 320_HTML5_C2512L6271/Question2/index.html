@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calorie Tracker</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="addfood">
+      <h2>Calorie Tracker</h2>
+      <form id="calorieForm">
+        <div>
+          <label for="foodName">Food Name:</label>
+          <input type="text" id="foodName" name="foodName" />
+        </div>
+        <div>
+          <label for="calories">Calories:</label>
+          <input type="number" id="calories" name="calories" />
+        </div>
+        <div>
+          <label for="mealType">Meal Type:</label>
+          <select id="mealType" name="mealType">
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Snack">Snack</option>
+          </select>
+        </div>
+        <button type="submit">[ Add Food ]</button>
+      </form>
+    </section>
+
+    <section class="foodlist">
+      <table>
+        <thead>
+          <tr>
+            <th>Food</th>
+            <th>Calories</th>
+            <th>Meal</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="foodTableBody"></tbody>
+      </table>
+    </section>
+
+    <section class="totalcalories">
+      <table>
+        <thead>
+          <tr>
+            <th>Total Calories</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="totalCalories"> Total Calories: 0</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

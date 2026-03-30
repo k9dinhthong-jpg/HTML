@@ -25,7 +25,6 @@ body {
   align-items: center;
   background: #ffffff;
   position: fixed;
-  transform: translateX(-50%);
   z-index: 1000;
   box-shadow: 0 0 5px 8px rgba(0, 0, 0, 0.08);
 }
@@ -34,20 +33,19 @@ body {
 }
 .site-nav > img {
   display: block;
-  width: 5%;
 }
 .site-nav > ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
 }
 .site-nav > ul > li {
   list-style: none;
-  font-size: 1.2rem;
 }
+
 .site-nav > ul > li > a:hover {
-  color: #ff002b;
+  color: #df0025;
+  font-weight: 600;
 }
 
 /* ____________Body style____________ */

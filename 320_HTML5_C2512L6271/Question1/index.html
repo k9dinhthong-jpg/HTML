@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Class Scheduler</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <section class="container">
+      <h1>Fitness Class Registration</h1>
+
+      <form id="fitnessForm">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" name="fullname" id="fullName" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="classType">Class Type</label>
+          <select id="classType">
+            <option value="">Select Class</option>
+            <option value="Yoga">Yoga</option>
+            <option value="HIIT">HIIT</option>
+            <option value="Pilates">Pilates</option>
+            <option value="Zumba">Zumba</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="preferredDate">Preferred Date</label>
+          <input type="date" id="preferredDate" />
+        </div>
+
+        <div class="form-group">
+          <label for="timeSlot">Time Slot</label>
+          <select id="timeSlot">
+            <option value="">Select Time Slot</option>
+            <option value="Morning">Morning</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Evening">Evening</option>
+          </select>
+        </div>
+
+        <button type="submit">Register Class</button>
+      </form>
+
+      <p id="message"></p>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
