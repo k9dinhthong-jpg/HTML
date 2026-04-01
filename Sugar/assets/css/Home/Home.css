@@ -15,3 +15,12 @@ main {
 img {
   display: block;
 }
+li {
+  list-style: none;
+}
+a {
+  font-weight: 600;
+}
+a:hover {
+  color: #ff0000;
+}

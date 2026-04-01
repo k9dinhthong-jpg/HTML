@@ -31,10 +31,30 @@ navLinks.forEach((link) => {
   });
 });
 // Hiển thị menu khi click vào biểu tượng
-document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.getElementById("menu-Toggle");
-  const navMenu = document.getElementById("nav-Menu");
-  menuToggle.addEventListener("click", function () {
-    navMenu.classList.toggle("show");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const menuToggle = document.getElementById("menu-Toggle");
+//   const navMenu = document.getElementById("nav-Menu");
+//   menuToggle.addEventListener("click", function () {
+//     navMenu.classList.toggle("show");
+//   });
+// });
+
+function toggleProductMenu() {
+  const productMenus = document.querySelectorAll(".product-menu");
+
+  productMenus.forEach(function (menu) {
+    const productMenuItem = menu.querySelector(".product-menu-item");
+
+    menu.addEventListener("mouseenter", function () {
+      productMenuItem.style.display = "block";
+    });
+
+    menu.addEventListener("mouseleave", function () {
+      productMenuItem.style.display = "none";
+    });
   });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  toggleProductMenu();
 });

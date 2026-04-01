@@ -2,11 +2,11 @@
 .contact-fixed {
   position: fixed;
   left: 2%;
-  bottom: 95px;
+  bottom: 3vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 1vw;
   z-index: 9999;
 }
 
@@ -20,27 +20,27 @@
 
 /* Nút Zalo */
 .zalo {
-  width: 84px;
-  height: 84px;
+  width: 3.5vw;
+  height: 3.5vw;
   background: #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 .zalo img {
-  width: 65px;
+  width: 2.5vw;
   height: auto;
   object-fit: contain;
 }
 
 /* Nút điện thoại */
 .phone {
-  width: 72px;
-  height: 72px;
+  width: 3.3vw;
+  height: 3.3vw;
   background: #ef1c1c;
   border-radius: 50%;
   color: #ffffff;
-  font-size: 26px;
+  font-size: 1.2vw;
   z-index: 2;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
 }
@@ -57,24 +57,26 @@
 }
 
 .phone::before {
-  width: 78px;
-  height: 78px;
-  border: 2px solid rgba(255, 0, 0, 0.25);
+  width: 4.5vw;
+  height: 4.5vw;
+  border: 3px solid rgba(255, 0, 0, 0.25);
 }
 
 .phone::after {
-  width: 94px;
-  height: 94px;
+  width: 3.5vw;
+  height: 3.5vw;
   border: 2px solid rgba(255, 0, 0, 0.18);
 }
 
 .phone i {
   position: relative;
+  animation: phoneShake 0.8s infinite;
+  transform-origin: center;
   z-index: 3;
 }
 .phone::before,
 .phone::after {
-  animation: phoneRing 1.8s infinite;
+  animation: phoneRing 1.2s infinite;
 }
 
 .phone::after {
@@ -95,13 +97,23 @@
     opacity: 0;
   }
 }
-
-.container {
-  /* --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
-  width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5); */
-  margin-right: auto;
-  margin-left: auto;
+@keyframes phoneShake {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  40% {
+    transform: rotate(15deg);
+  }
+  60% {
+    transform: rotate(-12deg);
+  }
+  80% {
+    transform: rotate(12deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

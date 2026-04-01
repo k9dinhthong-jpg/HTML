@@ -1,82 +1,6 @@
-/* Màn hình tablet 767px trở xuống */
-@media (max-width: 767px) {
-  .header-banner {
-    padding: 0.6vw 4vw;
-  }
-  .header-banner h1 {
-    font-size: 1.6vw;
-  }
-  .site-nav {
-    width: 100%;
-    height: fit-content;
-    top: 3.4vw;
-    left: 0%;
-    gap: 8vw;
-  }
-  .site-nav > img {
-    width: 5vw;
-  }
-  .nav-menu {
-    display: none !important;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-  .site-nav > .nav-menu.show {
-    display: flex !important;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 220px;
-    margin: 0;
-    padding: 10px 0;
-    z-index: 999;
-    background: #fff;
-  }
-  .site-nav > .nav-menu.show li {
-    width: 100%;
-    list-style: none;
-  }
-  .site-nav > .nav-menu.show li a {
-    display: block;
-    width: 100%;
-    padding: 10px 16px;
-  }
-}
-
-/* Màn hình tablet 768px trở lên */
-@media (min-width: 768px) {
-  .header-banner {
-    padding: 0.6vw 4vw;
-  }
-  .header-banner h1 {
-    font-size: 1.6vw;
-  }
-  .menu-toggle {
-    display: none;
-  }
-  .site-nav {
-    width: 100%;
-    height: fit-content;
-    top: 3.4vw;
-    left: 0%;
-    gap: 8vw;
-  }
-  .site-nav > img {
-    width: 5vw;
-  }
-  .site-nav > ul {
-    gap: 2vw;
-  }
-  .site-nav > ul > li {
-    font-size: 1.1vw;
-  }
-}
-
-/* Màn hình desktop 992 trở lên */
-@media (min-width: 992px) {
+/* Màn hình desktop 1200 trở lên */
+@media (min-width: 1200px) {
+  /* Nội dung banner */
   .header-banner {
     padding: 0.6vw 4vw;
   }
@@ -85,6 +9,7 @@
     font-size: 1.6vw;
   }
 
+  /* Nội dung thanh điều hướng site-nav */
   .menu-toggle {
     display: none;
   }
@@ -94,19 +19,26 @@
     max-width: 100%;
     height: fit-content;
     top: 3.3vw;
-    left: 0;
-    gap: 8vw;
+    padding: 0vw 3vw;
   }
 
-  .site-nav > img {
-    width: 5vw;
+  .nav-menu {
+    font-size: 1.3vw;
   }
-
-  .site-nav > ul {
-    gap: 2vw;
+  .nav-menu li {
+    padding: 1.2vw 1.5vw;
   }
-
-  .site-nav > ul > li {
-    font-size: 1.1vw;
+  .product-menu-item {
+    width: 18vw;
+  }
+  .find-text {
+    font-size: 1.3vw;
+    padding-left: 1vw;
+    width: 10vw;
+    height: 2.5vw;
+    border: none;
+    background-color: #c4bebe;
+    border-radius: 80px;
+    font-size: 1vw;
   }
 }
