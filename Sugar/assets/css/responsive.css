@@ -3,21 +3,19 @@
 }
 /* Màn hình 375px trở lên */
 @media (min-width: 375px) {
-  .container {
-    max-width: 100%;
-  }
   .header-banner {
     padding: clamp(1px, 2vw, 6px) clamp(1px, 3vw, 15px);
   }
   .header-banner h1 {
     font-size: clamp(0.8rem, 1.5vw, 1.2rem);
   }
-  .site-nav {    width: 100%;
+  .site-nav {
+    width: 100%;
     height: fit-content;
     margin: 0 auto;
     top: clamp(40px, 4vw, 60px);
     gap: 5rem;
-}
+  }
   .site-nav > img {
     width: clamp(50px, 6vw, 80px);
   }
@@ -31,10 +29,6 @@
 
 /* Màn hình 975px trở lên */
 @media (min-width: 975px) {
-  .container {
-    max-width: 100%;
-  }
-
   .header-banner {
     padding: clamp(6px, 2vw, 15px) clamp(15px, 3vw, 50px);
   }
