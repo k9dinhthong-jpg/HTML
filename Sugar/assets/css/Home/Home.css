@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+main {
+  margin: 3rem 0rem;
+}
+img {
+  display: block;
+}

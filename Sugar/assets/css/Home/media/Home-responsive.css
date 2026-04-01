@@ -1,0 +1,86 @@
+/* Màn hình mobile 767 trở xuống */
+@media (max-width: 767px) {
+  .header-banner {
+    padding: 0.6vw 4vw;
+  }
+  .header-banner h1 {
+    font-size: 1.6vw;
+  }
+  .site-nav {
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    top: 3.4vw;
+    left: 0;
+    gap: 8vw;
+  }
+  .site-nav > img {
+    width: 5vw;
+  }
+  .site-nav > ul {
+    gap: 2vw;
+  }
+  .site-nav > ul > li {
+    font-size: 1.1vw;
+  }
+}
+
+
+/* Màn hình tablet 768px trở lên */
+@media (min-width: 768px) {
+  .header-banner {
+    padding: 0.6vw 4vw;
+  }
+  .header-banner h1 {
+    font-size: 1.6vw;
+  }
+  .site-nav {
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    top: 3.4vw;
+    left: 0;
+    gap: 8vw;
+  }
+  .site-nav > img {
+    width: 5vw;
+  }
+  .site-nav > ul {
+    gap: 2vw;
+  }
+  .site-nav > ul > li {
+    font-size: 1.1vw;
+  }
+}
+
+/* Màn hình desktop 992 trở lên */
+@media (min-width: 992px) {
+  .header-banner {
+    padding: 0.6vw 4vw;
+  }
+
+  .header-banner h1 {
+    font-size: 1.6vw;
+  }
+
+  .site-nav {
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    top: 3.4vw;
+    left: 0;
+    gap: 8vw;
+  }
+
+  .site-nav > img {
+    width: 5vw;
+  }
+
+  .site-nav > ul {
+    gap: 2vw;
+  }
+
+  .site-nav > ul > li {
+    font-size: 1.1vw;
+  }
+}

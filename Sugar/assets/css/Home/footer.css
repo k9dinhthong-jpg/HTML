@@ -1,0 +1,21 @@
+.footer-top {
+  width: 100%;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  background-color: #232323;
+  color: #ffffff;
+}
+.footer-top > div > ul > li > a {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  width: 100%;
+  padding: 1rem 0rem;
+  text-align: center;
+  background-color: #000000;
+  color: #636363;
+  font-size: 1.2rem;
+}
