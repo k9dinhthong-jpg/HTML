@@ -10,28 +10,18 @@
 }
 
 .product {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
 }
-.product-hitachi > h2 {
+.title-product {
   text-align: center;
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 700;
 }
-.product-kobelco > h2 {
-  text-align: center;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  font-weight: 700;
+.list-product {
+  margin: 0 auto;
 }
-.product-komatsu > h2 {
-  text-align: center;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
 .btn-arrow {
   padding: 0.7rem 1.2rem;
   color: #ffffff;
@@ -47,13 +37,14 @@
   font-size: 1.4rem;
 }
 
-.item > ul {
-  display: flex;
-  margin: auto;
-  justify-content: space-between;
+.list-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
+  margin: auto;
   gap: 1.5rem;
 }
+
 .view-all-btn {
   background: none;
   border: none;
@@ -66,21 +57,21 @@
   width: fit-content;
   cursor: pointer;
 }
-.product > div > h2 {
+.title-product {
   margin-top: 3rem;
   margin-bottom: 0.5rem;
   font-size: 2rem;
   text-transform: uppercase;
   color: #576398;
 }
-.item > ul > li {
+.list-item > li {
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid #e0e0e0;
 }
-.item > ul > li > a {
+.list-item > li > a {
   margin: 1rem 0rem;
   padding: 0.5rem 1rem;
   color: #0b3cce;
@@ -88,14 +79,14 @@
   font-size: 1.4rem;
 }
 
-.item img {
+.list-item img {
   display: block;
   width: 100%;
   object-fit: cover;
 }
 
 .introduction {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -126,7 +117,7 @@
 }
 
 .featured-news {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
