@@ -1,20 +1,21 @@
 /* Màn hình desktop 1200 trở lên */
 @media (min-width: 1200px) {
-  /* Nội dung banner */
-  .header-banner {
+  /* Nội dung tiêu đề */
+  .tieu-de {
     padding: 0.6vw 4vw;
   }
 
-  .header-banner h1 {
+  .tieu-de-Trai,
+  .tieu-de-Phai {
     font-size: 1.6vw;
   }
 
   /* Nội dung thanh điều hướng site-nav */
-  .menu-toggle {
+  .nut-dieu-huong {
     display: none;
   }
 
-  .site-nav {
+  .thanh-dieu-huong {
     width: 100%;
     max-width: 100%;
     height: fit-content;
@@ -22,13 +23,13 @@
     padding: 0vw 3vw;
   }
 
-  .nav-menu {
+  .danhsach-thanh-dieu-huong {
     font-size: 1.3vw;
   }
-  .nav-menu li {
+  .danhsach-thanh-dieu-huong li {
     padding: 1.2vw 1.5vw;
   }
-  .product-menu-item {
+  .danh-sach-lua-chon {
     width: 18vw;
   }
   .find-text {

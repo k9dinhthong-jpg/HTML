@@ -1,3 +1,32 @@
+// Gắn thanh tiêu đề lên đầu trang khi cuộn chuột
+const sitenav = document.querySelector(".thanh-dieu-huong");
+window.addEventListener("scroll", function () {
+  if (window.scrollY > window.innerHeight * 0.02) {
+    sitenav.classList.add("gan-tren");
+  } else {
+    sitenav.classList.remove("gan-tren");
+  }
+});
+
+// Hiển thị menu sản phẩm khi chỉ vào "SẢN PHẨM"
+function toggleProductMenu() {
+  const productMenu = document.querySelector(".danh-sach");
+  const productMenuItem = document.querySelector(".danh-sach-lua-chon");
+  productMenu.addEventListener("mouseenter", function () {
+    productMenuItem.style.display = "block"; // hiển thị menu
+  });
+  productMenu.addEventListener("mouseleave", function () {
+    productMenuItem.style.display = "none"; // ẩn menu
+  });
+}
+
+// Gọi hàm để kích hoạt sự kiện
+document.addEventListener("DOMContentLoaded", function () {
+  toggleProductMenu();
+});
+
+
+
 // Dùng để chuyển slider ảnh trên trang chủ
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
@@ -12,17 +41,8 @@ $(document).ready(function () {
   });
 });
 
-const sitenav = document.querySelector(".site-nav");
-
-window.addEventListener("scroll", function () {
-  if (window.scrollY > window.innerHeight * 0.02) {
-    sitenav.classList.add("sticky-top");
-  } else {
-    sitenav.classList.remove("sticky-top");
-  }
-});
 // Làm sáng thẻ khi trang đang ở thẻ đó
-const navLinks = document.querySelectorAll(".site-nav .nav-link");
+const navLinks = document.querySelectorAll(".thanh-dieu-huong .nav-link");
 
 navLinks.forEach((link) => {
   link.addEventListener("click", function () {
@@ -38,23 +58,3 @@ navLinks.forEach((link) => {
 //     navMenu.classList.toggle("show");
 //   });
 // });
-
-function toggleProductMenu() {
-  const productMenus = document.querySelectorAll(".product-menu");
-
-  productMenus.forEach(function (menu) {
-    const productMenuItem = menu.querySelector(".product-menu-item");
-
-    menu.addEventListener("mouseenter", function () {
-      productMenuItem.style.display = "block";
-    });
-
-    menu.addEventListener("mouseleave", function () {
-      productMenuItem.style.display = "none";
-    });
-  });
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  toggleProductMenu();
-});

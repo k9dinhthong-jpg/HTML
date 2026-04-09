@@ -1,3 +1,4 @@
+/*  Ảnh slider */
 #main-slider {
   width: 100%;
 }
@@ -9,84 +10,23 @@
   object-fit: cover;
 }
 
-.product {
-  width: 80%;
+/*  Sản phẩm */
+.list-product {
+  width: 60%;
   margin: 0 auto;
 }
-.title-product {
+.product-title {
   text-align: center;
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 700;
 }
-.list-product {
-  margin: 0 auto;
-}
-.btn-arrow {
-  padding: 0.7rem 1.2rem;
-  color: #ffffff;
-  border: 1px solid #576398;
-  background-color: #576398;
-  font-size: 1.4rem;
-}
-.btn-text {
-  padding: 0.7rem 3rem;
-  color: #ffffff;
-  border: 1px solid #576398;
-  background-color: #576398;
-  font-size: 1.4rem;
-}
 
-.list-item {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-  margin: auto;
-  gap: 1.5rem;
-}
 
-.view-all-btn {
-  background: none;
-  border: none;
-  outline: none;
-  box-shadow: none;
-  margin: 1.8rem auto;
-  display: flex;
-  align-items: center;
-  gap: 0.1rem;
-  width: fit-content;
-  cursor: pointer;
-}
-.title-product {
-  margin-top: 3rem;
-  margin-bottom: 0.5rem;
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: #576398;
-}
-.list-item > li {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid #e0e0e0;
-}
-.list-item > li > a {
-  margin: 1rem 0rem;
-  padding: 0.5rem 1rem;
-  color: #0b3cce;
-  border: 1px solid #0b3cce;
-  font-size: 1.4rem;
-}
 
-.list-item img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-}
 
 .introduction {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -117,7 +57,7 @@
 }
 
 .featured-news {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
